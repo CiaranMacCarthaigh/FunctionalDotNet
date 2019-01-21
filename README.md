@@ -28,3 +28,7 @@ Implementing an equivalent function in F# would have to be similar to the C# imp
 The goal of this project would be to enable developers to implement more functional-orientated forms of this, utilising native features of F#:
 
     let trimmedStringContains substring item = String.trim item |> String.contains substring
+
+## Target framework
+
+This project is build on .NET Standard 2.0.
