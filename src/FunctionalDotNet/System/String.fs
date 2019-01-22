@@ -16,3 +16,11 @@ let trimEnd (trimChars : char array option) (string:String) : string =
     match trimChars with
     | Some trimChars -> string.TrimEnd trimChars
     | None -> string.TrimEnd()
+    
+let contains (value:String) (string:String) =
+    string.Contains value
+    
+let substring (startIndex:int) (length:int option) (string:String) =
+    match length with
+    | Some length -> string.Substring(startIndex, length)
+    | None -> string.Substring(startIndex)

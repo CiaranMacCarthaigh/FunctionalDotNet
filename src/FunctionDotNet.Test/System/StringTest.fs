@@ -61,3 +61,21 @@ let ``TrimEnd - trimChars parameter is Some`` () =
     let actualResult = FunctionalDotNet.System.String.trimEnd trimChars expectedResult
     
     Assert.That(actualResult, Is.EqualTo(expectedResult))
+    
+[<Test>]
+let ``Contains - string contains value`` () =
+    let testString = "This string from Navan contains a palindrome"
+    let testValue = "Navan"
+    
+    let actualResult = FunctionalDotNet.System.String.contains testValue testString
+    
+    Assert.That(actualResult, Is.True)
+    
+[<Test>]
+let ``Contains - string does not contain value`` () =
+    let testString = "This string from Navan contains a palindrome"
+    let testValue = "Cavan"
+    
+    let actualResult = FunctionalDotNet.System.String.contains testValue testString
+    
+    Assert.That(actualResult, Is.False)
