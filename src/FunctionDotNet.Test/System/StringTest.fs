@@ -79,3 +79,24 @@ let ``Contains - string does not contain value`` () =
     let actualResult = FunctionalDotNet.System.String.contains testValue testString
     
     Assert.That(actualResult, Is.False)
+    
+[<Test>]
+let ``Substring - length is None`` () =
+    let testString = "We will take a substring from this string."
+    let startIndex = 10
+    let expectedResult = "ke a substring from this string."
+    
+    let actualResult = FunctionalDotNet.System.String.substring startIndex None testString
+    
+    Assert.That(actualResult, Is.EqualTo(expectedResult))
+    
+[<Test>]
+let ``Substring - length is Some`` () =
+    let testString = "We will take a substring from this string."
+    let startIndex = 10
+    let length = 8 |> Some
+    let expectedResult = "ke a sub"
+    
+    let actualResult = FunctionalDotNet.System.String.substring startIndex length testString
+    
+    Assert.That(actualResult, Is.EqualTo(expectedResult))
