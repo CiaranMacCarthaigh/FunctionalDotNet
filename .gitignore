@@ -291,3 +291,4 @@ __pycache__/
 Ayuda.BMS.Reporting.WebApp/wwwroot/css/*
 Ayuda.BMS.Reporting.WebApp/wwwroot/js/*
 Ayuda.BMS.Reporting.OrderBacklog.FSharp/Ayuda.BMS.Reporting.OrderBacklog.FSharp.nuspec
+build.fsx.lock
