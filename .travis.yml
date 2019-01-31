@@ -1,0 +1,4 @@
+language: csharp
+
+script:
+ - ./fake.cmd run
