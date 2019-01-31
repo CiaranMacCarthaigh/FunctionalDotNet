@@ -9,7 +9,7 @@ let ``Trim - trimChars parameter is None`` () =
     let expectedResult = "This is  atest string"
     let trimChars = None
     
-    let actualResult = FunctionalDotNet.System.String.trim trimChars expectedResult
+    let actualResult = FunctionalDotNet.System.String.trim trimChars testString
     
     Assert.That(actualResult, Is.EqualTo(expectedResult))
 
@@ -19,7 +19,7 @@ let ``Trim - trimChars parameter is Some`` () =
     let expectedResult = "This is  atest strin"
     let trimChars = [| '\t'; ' '; 'g'; |] |> Some
     
-    let actualResult = FunctionalDotNet.System.String.trim trimChars expectedResult
+    let actualResult = FunctionalDotNet.System.String.trim trimChars testString
     
     Assert.That(actualResult, Is.EqualTo(expectedResult))
 
@@ -29,7 +29,7 @@ let ``TrimStart - trimChars parameter is None`` () =
     let expectedResult = "This is  atest string   "
     let trimChars = None
     
-    let actualResult = FunctionalDotNet.System.String.trimStart trimChars expectedResult
+    let actualResult = FunctionalDotNet.System.String.trimStart trimChars testString
     
     Assert.That(actualResult, Is.EqualTo(expectedResult))
 
@@ -39,7 +39,7 @@ let ``TrimStart - trimChars parameter is Some`` () =
     let expectedResult = "his is  atest string   "
     let trimChars = [| '\t'; ' '; 'T'; 'g'; |] |> Some
     
-    let actualResult = FunctionalDotNet.System.String.trimStart trimChars expectedResult
+    let actualResult = FunctionalDotNet.System.String.trimStart trimChars testString
     
     Assert.That(actualResult, Is.EqualTo(expectedResult))
 
@@ -49,7 +49,7 @@ let ``TrimEnd - trimChars parameter is None`` () =
     let expectedResult = "\t This is  atest string"
     let trimChars = None
     
-    let actualResult = FunctionalDotNet.System.String.trimEnd trimChars expectedResult
+    let actualResult = FunctionalDotNet.System.String.trimEnd trimChars testString
     
     Assert.That(actualResult, Is.EqualTo(expectedResult))
 
@@ -59,7 +59,7 @@ let ``TrimEnd - trimChars parameter is Some`` () =
     let expectedResult = "\t This is  atest strin"
     let trimChars = [| '\t'; ' '; 'T'; 'g'; |] |> Some
     
-    let actualResult = FunctionalDotNet.System.String.trimEnd trimChars expectedResult
+    let actualResult = FunctionalDotNet.System.String.trimEnd trimChars testString
     
     Assert.That(actualResult, Is.EqualTo(expectedResult))
     
