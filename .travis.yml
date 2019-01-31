@@ -1,6 +1,0 @@
-language: csharp
-sudo: true
-dist: trusty
-
-script:
- - ./fake.sh run
