@@ -1,4 +1,5 @@
 language: csharp
+sudo: true
 dist: trusty
 
 script:
