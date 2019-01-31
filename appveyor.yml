@@ -4,6 +4,6 @@ build:
   verbosity: detailed
   
 build_script:
- - sh: sudo build.cmd
+ - sh: sudo fake.sh
 
 test: off
