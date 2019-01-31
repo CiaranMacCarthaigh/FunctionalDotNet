@@ -31,4 +31,4 @@ open Fake.Core.TargetOperators
 ==> "BuildApp"
 
 // Start build
-Target.runOrDefault "Default"
+Target.runOrDefault "BuildApp"
