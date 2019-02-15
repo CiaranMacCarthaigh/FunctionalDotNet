@@ -1,12 +1,15 @@
 #r "paket:
+nuget Fake.DotNet.NuGet
 nuget Fake.IO.FileSystem
 nuget Fake.DotNet.MSBuild
-nuget Fake.Core.Target //"
+nuget Fake.Core.Target
+nuget FSharp.Core 4.5.0.0 //"
 #load "./.fake/build.fsx/intellisense.fsx"
 
 open Fake.Core
 open Fake.IO
 open Fake.IO.Globbing.Operators
+open Fake.Core.TargetOperators
 open Fake.DotNet
 
 let buildDir = "./build"
@@ -22,13 +25,12 @@ Target.create "BuildApp" (fun _ ->
     |> Trace.logItems "AppBuild-Output: "
 )
 
-Target.create "Default" |> ignore
+Target.create "All" ignore
 
-// Dependencies
-open Fake.Core.TargetOperators
 
 "Clean"
 ==> "BuildApp"
+==> "All"
 
 // Start build
-Target.runOrDefault "Default"
+Target.runOrDefault "All"
