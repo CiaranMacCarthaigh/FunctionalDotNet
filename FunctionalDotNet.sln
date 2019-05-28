@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{40DC7A87-03E6-4955-AFF3-2119C1AA4CE4}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FunctionalDotNet", "src\FunctionalDotNet\FunctionalDotNet.fsproj", "{D42A8ED7-085A-4B2D-90A1-3447ECB6CD76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4272414D-F176-4743-BE9E-7B4002EB15FB}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FunctionDotNet.Test", "tests\FunctionDotNet.Test\FunctionDotNet.Test.fsproj", "{E79C47A6-384A-47AC-8851-31C3C21E0880}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D42A8ED7-085A-4B2D-90A1-3447ECB6CD76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D42A8ED7-085A-4B2D-90A1-3447ECB6CD76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D42A8ED7-085A-4B2D-90A1-3447ECB6CD76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D42A8ED7-085A-4B2D-90A1-3447ECB6CD76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E79C47A6-384A-47AC-8851-31C3C21E0880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E79C47A6-384A-47AC-8851-31C3C21E0880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E79C47A6-384A-47AC-8851-31C3C21E0880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E79C47A6-384A-47AC-8851-31C3C21E0880}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3D82C73-0244-4456-A72F-A9532E585545}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D42A8ED7-085A-4B2D-90A1-3447ECB6CD76} = {40DC7A87-03E6-4955-AFF3-2119C1AA4CE4}
+		{E79C47A6-384A-47AC-8851-31C3C21E0880} = {4272414D-F176-4743-BE9E-7B4002EB15FB}
+	EndGlobalSection
+EndGlobal
